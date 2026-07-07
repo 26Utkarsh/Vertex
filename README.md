@@ -1,34 +1,52 @@
 # Vertex
 
-Vertex V1 aggregates GitHub repositories, arXiv papers, and Hacker News stories into a ranked, AI-summarized developer intelligence feed.
+**AI-ranked developer intelligence feed.** Aggregates GitHub, arXiv, and Hacker News into one ranked, summarized signal — so you stop checking 15 tabs every morning.
 
-## Apps
+![Status](https://img.shields.io/badge/status-V1-orange) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-- `backend`: Java 21 Spring Boot REST API, collectors, Google OAuth, JWT, PostgreSQL persistence.
-- `frontend`: Next.js App Router, TypeScript, Tailwind UI.
+---
 
-## Local Environment
+## What it does
 
-Copy `.env.example` into environment variables for your shell or hosting provider. Secrets are never committed.
+- Pulls trending GitHub repos, new arXiv papers, and top Hacker News stories
+- AI-summarizes and ranks everything by relevance, not just recency
+- Daily brief, cross-source story merging, bookmarks, search
 
-## Build
+## Stack
 
-```powershell
+| Layer | Tech |
+|---|---|
+| Backend | Java 21, Spring Boot, Spring Security, JPA, PostgreSQL |
+| Frontend | Next.js (App Router), TypeScript, Tailwind |
+| Auth | Google OAuth + JWT |
+| AI | Gemini API |
+| Hosting | Render (backend + frontend) |
+
+## Setup
+
+```bash
+# Backend
 cd backend
+cp .env.example .env.local   # fill in DB + API keys
 mvn test
 mvn package
 
-cd ..\frontend
+# Frontend
+cd ../frontend
 npm install
 npm run test
 npm run build
 ```
 
-## Local Backend
-
-The ignored `backend/.env.local` file is used for local database credentials.
-
+### Local backend (Windows)
 ```powershell
 cd backend
 .\scripts\run-local.ps1
 ```
+
+Secrets are never committed — use `.env.local` (gitignored).
+
+## Roadmap
+
+- [x] V1 — GitHub, arXiv, HN feed + ranking + auth
+- [ ] V2 — Security intel, AI model tracking, dev tool hub, assistant chat
