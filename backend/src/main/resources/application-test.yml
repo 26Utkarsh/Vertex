@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vertex_test
+    username: test
+    password: test
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: none
+vertex:
+  frontend-url: http://localhost:3000
+  github-token: ""
+  gemini-api-key: ""
+  gemini-model: gemini-2.0-flash
+  jwt-secret: abcdefghijklmnopqrstuvwxyz123456
+  internal-api-key: internal
+  collector-enabled: false
+  allowed-origins: http://localhost:3000

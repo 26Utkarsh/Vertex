@@ -1,0 +1,19 @@
+name: Vertex weekly diff snapshot
+
+on:
+  schedule:
+    - cron: "30 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Store weekly top 20 snapshot
+        run: |
+          curl --fail --request POST "$VERTEX_API_URL/api/internal/weekly/snapshot" \
+            --header "X-Internal-Api-Key: $VERTEX_INTERNAL_API_KEY"
+        env:
+          VERTEX_API_URL: ${{ secrets.VERTEX_API_URL }}
+          VERTEX_INTERNAL_API_KEY: ${{ secrets.VERTEX_INTERNAL_API_KEY }}
+

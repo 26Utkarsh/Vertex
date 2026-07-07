@@ -1,0 +1,18 @@
+name: Vertex collectors
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run all collectors
+        run: |
+          curl --fail --request POST "$VERTEX_API_URL/api/internal/collectors/all" \
+            --header "X-Internal-Api-Key: $VERTEX_INTERNAL_API_KEY"
+        env:
+          VERTEX_API_URL: ${{ secrets.VERTEX_API_URL }}
+          VERTEX_INTERNAL_API_KEY: ${{ secrets.VERTEX_INTERNAL_API_KEY }}

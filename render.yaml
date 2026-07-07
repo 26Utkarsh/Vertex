@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: vertex-backend
+    runtime: docker
+    rootDir: backend
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.0-flash
+      - key: JWT_SECRET
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: APP_FRONTEND_URL
+        sync: false
+      - key: INTERNAL_API_KEY
+        sync: false
+      - key: COLLECTOR_ENABLED
+        value: "false"
+      - key: ALLOWED_ORIGINS
+        sync: false
+  - type: web
+    name: vertex-frontend
+    runtime: node
+    rootDir: frontend
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start -- -H 0.0.0.0 -p $PORT
+    envVars:
+      - key: NEXT_PUBLIC_API_BASE_URL
+        sync: false
