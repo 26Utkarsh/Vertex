@@ -1,83 +1,171 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=F7941E&center=true&vCenter=true&width=600&lines=Vertex;AI-Ranked+Dev+Intelligence;Signal+Over+Noise" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&pause=1000&color=F7941E&center=true&vCenter=true&width=700&lines=⚡+VERTEX;Developer+Intelligence+Engine;Signal+Over+Noise." alt="Vertex" />
 
-Consolidate GitHub, arXiv, and Hacker News into one intelligently ranked feed. Vertex reads the internet's dev signal so you don't have to — surfacing what's actually important, not just what's newest.
+<br/>
 
-[![GitHub Release](https://img.shields.io/badge/release-v1.0-blue?style=for-the-badge)](https://github.com/26Utkarsh/Vertex/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
-[![Java 21](https://img.shields.io/badge/java-21+-E34C26?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
-[![TypeScript](https://img.shields.io/badge/typescript-5.0+-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+> **Stop checking 15 tabs every morning.**
+> Vertex reads GitHub, arXiv, and Hacker News — ranks what actually matters — and delivers it in one feed.
 
-**[📡 Live Demo](https://vertex-frontend-946u.onrender.com)** &nbsp;•&nbsp; **[📚 Docs](#documentation)** &nbsp;•&nbsp; **[🚀 Quick Start](#quick-start)** &nbsp;•&nbsp; **[🗺️ Roadmap](#roadmap)**
+<br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="500">
+<a href="https://vertex-frontend-946u.onrender.com"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-F7941E?style=for-the-badge" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Release-v1.0-blue?style=for-the-badge&logo=github" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Java-21%20LTS-E34C26?style=for-the-badge&logo=openjdk&logoColor=white" /></a>
+<a href="#"><img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /></a>
+<a href="#"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge" /></a>
+
+<br/><br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600" />
 
 </div>
 
----
-
-## Overview
-
-Every developer knows the ritual: fifteen tabs open every morning — GitHub trending, arXiv new submissions, Hacker News front page — sifting for the handful of things that actually matter. **Vertex ends that ritual.**
-
-It's not another feed. It's a ranking engine. Vertex ingests raw signal from multiple sources, runs it through an AI enrichment layer, scores it by relevance rather than recency, and hands you a single feed worth reading.
-
-- 🎯 **Single unified interface** across GitHub, arXiv, and Hacker News
-- 📊 **Relevance-based ranking**, not chronological noise
-- 🤖 **AI summarization** — key insight, zero context-switching
-- 🔗 **Cross-source deduplication** — one story, not three copies
-- 🔖 **Search & bookmarking** for real knowledge management
+<br/>
 
 ---
 
-## Technical Architecture
+## ⚡ What is Vertex?
+
+Every developer knows the morning ritual — open GitHub Trending, check arXiv new submissions, scroll Hacker News, repeat until you've wasted 45 minutes finding 3 things worth reading.
+
+**Vertex kills that ritual.**
+
+It's not a feed aggregator. It's a **ranking engine**. Vertex pulls raw data from across the developer internet, runs every item through an AI enrichment pipeline, scores it by actual relevance — growth, activity, cross-source significance — and surfaces only what's worth your attention.
+
+<br/>
 
 <div align="center">
 
-```mermaid
-flowchart TD
-    A[Next.js 14 + TypeScript Frontend] -->|REST| B[Spring Boot API Gateway]
-    B --> C[GitHub API]
-    B --> D[arXiv API]
-    B --> E[Hacker News API]
-    C --> F[Data Aggregation Layer]
-    D --> F
-    E --> F
-    F --> G[Gemini AI Ranking + Summarization]
-    G --> H[(PostgreSQL)]
-    H --> B
-```
+| | Before Vertex | With Vertex |
+|---|---|---|
+| 🕐 **Time to update** | 45 min across 15 tabs | 2 min, one feed |
+| 📊 **Sorted by** | Recency | Relevance score |
+| 🤖 **AI summaries** | None | Every item |
+| 🔗 **Cross-source** | Fragmented | Merged stories |
 
 </div>
 
-### Technology Stack
-
-| Layer | Component | Version | Notes |
-|---|---|---|---|
-| **Backend** | Java | 21 LTS | Type-safe, performant JVM runtime |
-| **Framework** | Spring Boot | 3.x | Layered, production-grade structure |
-| **Security** | Spring Security + OAuth 2.0 | — | Google OAuth + JWT |
-| **Database** | PostgreSQL (Neon) | 14+ | Free-tier serverless Postgres |
-| **ORM** | Spring Data JPA | — | Type-safe data access, Flyway migrations |
-| **Frontend** | Next.js | 14 | App Router, SSR |
-| **Language** | TypeScript | 5.0+ | Strict mode, end-to-end type safety |
-| **Styling** | Tailwind CSS | 3.x | Utility-first |
-| **AI** | Gemini API | Latest | Summarization + ranking signals |
-| **Deployment** | Render | — | Backend + frontend, zero paid infra |
+<br/>
 
 ---
 
-## Quick Start
+## 🧠 Core Features
+
+<table>
+<tr>
+<td width="50%">
+
+**📡 Unified Intelligence Feed**
+GitHub repos, arXiv papers, and Hacker News — normalized, ranked, and displayed in one place. No more tab switching.
+
+**🤖 AI Summarization**
+Every item gets a Gemini-powered summary. Understand what matters without reading the full article or README.
+
+**📊 Relevance Ranking**
+A custom score based on growth velocity, community activity, and freshness — not just publication time.
+
+</td>
+<td width="50%">
+
+**🔗 Cross-Source Story Merging**
+When a GitHub repo, its arXiv paper, and its HN discussion all surface together, Vertex merges them into one unified story.
+
+**📝 Daily Brief**
+One AI-generated paragraph summarizing the day's strongest developer signals. Read it in 30 seconds.
+
+**🔖 Bookmarks & Search**
+Full-text search across all indexed content. Save anything, find it instantly.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+## 🏗️ Architecture
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                      Data Sources                            │
+│          GitHub API · arXiv API · Hacker News API           │
+└────────────────────────┬─────────────────────────────────────┘
+                         │  (GitHub Actions cron, every 6h)
+                         ▼
+┌──────────────────────────────────────────────────────────────┐
+│                  Collection & Normalization                   │
+│        Spring Boot Collectors → Common Item Schema           │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────────┐
+│                  AI Intelligence Layer                        │
+│     Gemini API → Summary · Tags · Score · Rank Reason        │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────────┐
+│               PostgreSQL (Neon serverless)                    │
+│         items · users · bookmarks · weekly_snapshots         │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────────┐
+│           Spring Boot REST API (Render)                       │
+│      Auth · Feed · Search · Bookmarks · Brief endpoint       │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────────┐
+│           Next.js 14 Frontend (Render)                        │
+│    App Router · TypeScript · Tailwind · Strict types         │
+└──────────────────────────────────────────────────────────────┘
+```
+
+<br/>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Layer | Technology | Why |
+|---|---|---|
+| **Backend Language** | Java 21 LTS | Type-safe, performant, enterprise-grade |
+| **Backend Framework** | Spring Boot 3.x | Layered architecture, production-ready |
+| **Security** | Spring Security + JWT + Google OAuth | Stateless auth, zero friction login |
+| **Database** | PostgreSQL via Neon | Serverless, free tier, ACID compliant |
+| **Migrations** | Flyway | Schema versioning, reproducible deploys |
+| **ORM** | Spring Data JPA | Type-safe queries, no raw SQL |
+| **Frontend** | Next.js 14 (App Router) | SSR, clean routing, performance |
+| **Language** | TypeScript 5 (strict) | End-to-end type safety, zero `any` |
+| **Styling** | Tailwind CSS 3 | Utility-first, consistent design system |
+| **AI** | Google Gemini API | Summarization, ranking signal generation |
+| **Scheduling** | GitHub Actions (cron) | Free, reliable, zero-config collector jobs |
+| **Hosting** | Render | Full-stack deploy, zero paid infra |
+
+</div>
+
+<br/>
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Java 21+
-- Node.js 18+ / npm 9+
-- PostgreSQL 14+
-- Git
+- Java 21+ · Node.js 18+ · PostgreSQL 14+ · Git
 
-### Environment Setup
+### 1. Clone
+```bash
+git clone https://github.com/26Utkarsh/Vertex.git
+cd Vertex
+```
 
+### 2. Backend Environment
+Create `backend/.env.local`:
 ```env
 SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/vertex_db
 SPRING_DATASOURCE_USERNAME=postgres
@@ -85,72 +173,110 @@ SPRING_DATASOURCE_PASSWORD=your_password
 GOOGLE_CLIENT_ID=your_client_id
 GOOGLE_CLIENT_SECRET=your_client_secret
 GEMINI_API_KEY=your_gemini_key
-JWT_SECRET=your_jwt_secret_key
+GITHUB_TOKEN=your_github_pat
+JWT_SECRET=your_32_char_secret
+INTERNAL_API_KEY=your_32_char_secret
 ```
 
-### Run
-
+### 3. Run Backend
 ```bash
-# Backend
 cd backend
 mvn clean test && mvn clean package
-mvn spring-boot:run          # macOS/Linux
-.\scripts\run-local.ps1      # Windows
+mvn spring-boot:run             # macOS/Linux
+.\scripts\run-local.ps1         # Windows
+```
 
-# Frontend
+### 4. Run Frontend
+```bash
 cd frontend
-npm install
-npm run dev
+npm install && npm run dev
 ```
 
-Backend → `http://localhost:8080` · Frontend → `http://localhost:3000`
+**Backend** → `http://localhost:8080` · **Frontend** → `http://localhost:3000`
+
+<br/>
 
 ---
 
-## API Reference
-
-```
-GET  /api/v1/feeds             Retrieve aggregated feed
-POST /api/v1/bookmarks         Create bookmark
-GET  /api/v1/bookmarks         List user bookmarks
-POST /api/v1/preferences       Update ranking preferences
-GET  /api/v1/search?q=term     Full-text search
-```
-
----
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 Vertex/
+├── .github/workflows/
+│   └── collectors.yml          # Cron job — collects data every 6 hours
 ├── backend/
 │   └── src/main/java/com/vertex/
-│       ├── controller/   service/   model/   repository/   config/   security/
-├── frontend/
-│   └── app/   components/   lib/   types/   styles/
+│       ├── controller/         # REST endpoints
+│       ├── service/            # Business logic
+│       ├── repository/         # Data access (JPA)
+│       ├── entity/             # DB models
+│       ├── dto/                # Request/response shapes
+│       ├── collector/          # GitHub · arXiv · HN collectors
+│       ├── ai/                 # Gemini summarization
+│       ├── auth/               # OAuth + JWT
+│       └── config/             # Spring config
+└── frontend/
+    ├── app/                    # Next.js App Router pages
+    ├── components/             # Reusable UI components
+    └── lib/                    # API client, utilities
 ```
+
+<br/>
 
 ---
 
-## Roadmap
+## 🔐 Security
 
-**Phase 1 — Core MVP** ✅
-Multi-source aggregation · AI ranking & summarization · Google OAuth · Bookmarks & search · Live deployment
+- JWT tokens, 24h expiration
+- Google OAuth — no passwords stored
+- All secrets in environment variables, never committed
+- CORS locked to frontend domain
+- Server-side input validation on every endpoint
+- Parameterized queries via JPA — no SQL injection surface
 
-**Phase 2 — Enhanced Intelligence** 🚧
-Security vulnerability tracking · AI model release tracking · Dev tools directory · Context-aware assistant · Personalized digest
+<br/>
 
-**Phase 3 — Community & Scale** 📋
-Team collaboration · Custom source integration · Mobile app · Public API · Fine-tuned ranking model
+---
+
+## 🗺️ Roadmap
+
+```
+v1.0 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ✅ LIVE
+  ✔ GitHub · arXiv · HN feed aggregation
+  ✔ AI summarization + relevance ranking
+  ✔ Google OAuth + JWT auth
+  ✔ Bookmarks + full-text search
+  ✔ Daily brief, cross-source story merging
+  ✔ Deployed on Render, zero paid infra
+
+v2.0 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🚧 NEXT
+  ○ Security vulnerability tracking (NVD API)
+  ○ AI model release tracking (Hugging Face)
+  ○ Developer tools directory
+  ○ AI assistant chat (context-aware, DB-grounded)
+  ○ Personalized skip list + digest
+
+v3.0 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 📋 PLANNED
+  ○ Team workspaces
+  ○ Public API
+  ○ Mobile app
+  ○ Custom source integration
+```
+
+<br/>
 
 ---
 
 <div align="center">
 
-**[View Live Demo](https://vertex-frontend-946u.onrender.com)** • **[Report Bug](https://github.com/26Utkarsh/Vertex/issues)** • **[Request Feature](https://github.com/26Utkarsh/Vertex/issues)**
+<img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="80" />
 
-Built solo, on zero paid infrastructure, by [**26Utkarsh**](https://github.com/26Utkarsh)
+**Built solo. Zero paid infrastructure. Production-grade.**
 
-<img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="100">
+[**📡 Live Demo**](https://vertex-frontend-946u.onrender.com) &nbsp;•&nbsp; [**🐛 Report Bug**](https://github.com/26Utkarsh/Vertex/issues) &nbsp;•&nbsp; [**💡 Request Feature**](https://github.com/26Utkarsh/Vertex/issues)
+
+<br/>
+
+Made by [**26Utkarsh**](https://github.com/26Utkarsh)
 
 </div>
